@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades</title>
+    <link href="./styles.css" rel="stylesheet" />
+</head>
+<body>
+   <div class="form-container">
+    <form id="studentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="score">Score (0-100):</label>
+      <input type="number" id="score" min="0" max="100" required>
+      
+      <label for="grade">Grade:</label>
+      <select id="grade" required>
+        <option value="" disabled selected>Select Grade</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+      </select>
+      <button type="submit">Add Student</button>
+      </form>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Student-Name</th>
+        <th>Score</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+   <script src="script.js"></script>
+</body>
+</html>
