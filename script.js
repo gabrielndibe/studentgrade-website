@@ -1,4 +1,4 @@
-onst students = JSON.parse(localStorage.getItem('students')) || [];
+const students = JSON.parse(localStorage.getItem('students')) || [];
 
 function calculateGrade(score) {
   if (score >= 90) {
